@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(97, 97, 97);
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+}
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    opacity: 0.65;
+    margin-right: 25px;
+    line-height: 25px;
+}
+button {
+    position: static;
+    font-family: 'Lexend Deca', sans-serif;
+    background: white;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    border: 3px white solid;
+}
+.container {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#c1 {
+    background-color: rgb(226,133,39);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#c1 button {
+    color: rgb(226,133,39);
+}
+#c1 button:hover {
+    background: rgb(226,133,39);
+    color: white;
+    cursor: pointer;
+}
+#c2 {
+    background-color: #016972;
+}
+#c2 button {
+    color: #016972;
+}
+#c2 button:hover {
+    background: #016972;
+    color: white;
+    cursor: pointer;
+}
+#c3 {
+    background-color: #00403f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#c3 button {
+    color: #00403f;
+}
+#c3 button:hover {
+    background: #00403f;
+    color: white;
+    cursor: pointer;
+}
+#c1, #c2, #c3{
+    width: 40vh;
+    height: 55vh;
+}
+#position {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #c1, #c2, #c3 {
+        width: 70.5mm;
+        height: 55vh;
+    }
+    #c1 {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+    #c3 {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    #position {
+        margin-top: 27.5px;
+    }
+    button {
+        margin-top: 20px;
+    }
+}
